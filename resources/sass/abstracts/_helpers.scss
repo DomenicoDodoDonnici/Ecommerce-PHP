@@ -1,0 +1,105 @@
+// DIVs
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+// overlay
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+
+    &.active {
+        z-index: 995;
+        opacity: 1;
+    }
+}
+
+// Images
+.cover {
+    background-size: cover;
+}
+
+// Whitespacing
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-4 {
+    margin-top: 4rem;
+}
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.pv2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.ph2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.pv4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.ph4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.pv8 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.ph8 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+// No Scroll for body
+.noscroll {
+    overflow: hidden;
+}
+
+.blur > nav,
+.blur > header,
+.blur > section,
+.blur > footer {
+    filter: blur(5px);
+}
+
+// Inline elements
+.inline-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+// Color change
+.tulip {
+    color: $tulip;
+}
+
+.grullo {
+    color: $grullo;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.black {
+    color: #000 !important;
+}
+
+.transparent {
+    background: transparent !important;
+}

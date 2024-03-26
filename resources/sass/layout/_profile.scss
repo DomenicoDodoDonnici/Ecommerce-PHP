@@ -1,0 +1,99 @@
+.profile-container {
+    margin-top: 5rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .profile-content {
+        background-color: $white;
+        padding: 4rem;
+        width: 70%;
+        box-shadow: 0px 3px 10px 0px rgba(230, 230, 230, 1);
+        border-radius: 10px;
+
+        .content-section:not(:first-child) {
+            margin-top: 8rem;
+        }
+
+        .content-title {
+            font-family: $heading;
+            font-size: 3.5rem;
+            font-style: italic;
+            position: relative;
+            width: fit-content;
+
+            span {
+                position: relative;
+                z-index: 20;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                border: 7px solid lighten($tulip, 10%);
+                z-index: 15;
+            }
+        }
+
+        div.content-body {
+            font-size: 2rem;
+            padding-top: 2rem;
+
+            table.account-info {
+                width: 100%;
+
+                td {
+                    padding: 0.5rem;
+
+                    &.title {
+                        font-weight: 600;
+                    }
+
+                    &:not(.title) {
+                        text-align: right;
+                    }
+                }
+            }
+
+            table.purchases {
+                width: 100%;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                border-collapse: collapse;
+                border-style: hidden; /* hide standard table (collapsed) border */
+                box-shadow: 0 0 0 1px #ccc; /* this draws the table border  */
+
+                td {
+                    padding: 1rem;
+
+                    &:last-child {
+                        text-align: center;
+                    }
+                }
+
+                thead {
+                    tr td {
+                        font-weight: 600;
+                    }
+                }
+                tbody {
+                    tr td {
+                        font-size: 1.7rem;
+                        border: 1px solid #ccc;
+                        border-bottom: 1px solid transparent;
+                        word-wrap: break-word;
+
+                        i.fa-file-download {
+                            color: $grullo;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

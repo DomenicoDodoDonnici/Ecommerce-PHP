@@ -1,0 +1,125 @@
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+    .container {
+        width: 97%;
+    }
+
+    header {
+        height: 80vh !important;
+    }
+
+    .main__links {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "main main main main"
+            "main main main main"
+            "pic1 pic2 pic3 pic4";
+    }
+
+    .main-pic {
+        background-position: center 70% !important;
+    }
+
+    .product__card {
+        width: 180px;
+    }
+    .glider-contain.multiple-items .glider {
+        width: calc(180px * 4 + 0.25rem * 8);
+    }
+    .glider-contain.single-item .glider {
+        width: 180px;
+    }
+}
+
+.explore_page {
+    &__sidebar {
+        flex: 20%;
+    }
+    &__items {
+        flex: 80%;
+
+        & > a {
+            margin: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    html {
+        font-size: 42%;
+    }
+    form {
+        .form-group {
+            grid-column: span 2;
+        }
+
+        &#register_form button {
+            width: 100%;
+            margin: 0 !important;
+            font-size: 16px;
+        }
+
+        &#login_form button {
+            margin: 0 !important;
+            font-size: 16px;
+        }
+    }
+    #menu .menu__popup .popup__content .popup_login {
+        & > * {
+            width: 100%;
+        }
+
+        .greeting img {
+            display: none;
+        }
+    }
+    .glider-contain.multiple-items .glider {
+        width: calc(170px * 3 + 0.25rem * 6);
+    }
+    .glider-contain.single-item .glider {
+        width: 170px;
+    }
+    .product__card {
+        width: 170px;
+    }
+    .product__details .product__name {
+        font-size: 1.8rem;
+    }
+    .product__details .product__price span {
+        font-size: 2rem;
+    }
+
+    .blog {
+        flex-direction: column;
+
+        .blog-post {
+            height: auto;
+            padding: 10rem 0;
+        }
+
+        .blog-details {
+            transform: translateY(0);
+
+            .btn {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// Rules based on device screen height
+@media screen and (min-height: 1200px) {
+    header {
+        height: 50vh !important;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    header {
+        height: 100vh !important;
+    }
+}

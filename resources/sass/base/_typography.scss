@@ -1,0 +1,43 @@
+.fs16 {
+    font-size: 1.6rem;
+}
+.fs18 {
+    font-size: 1.8rem;
+}
+.fs20 {
+    font-size: 2rem;
+}
+.fs24 {
+    font-size: 2.4rem;
+}
+.fs32 {
+    font-size: 3.2rem;
+}
+
+.serif {
+    font-family: $heading;
+}
+
+.sans {
+    font-family: $body;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.stroked {
+    text-decoration: line-through;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}

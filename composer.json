@@ -1,0 +1,36 @@
+{
+  "name": "domenico/ecommerce",
+  "description": "Ecommerce site with pure PHP and vanilla JavaScript",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Domenico Donnici",
+      "email": "lildododonnici05@gmail.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "src/Config/constants.php",
+      "src/Config/utilities.php"
+    ],
+    "psr-4": {
+      "App\\Core\\": "src/Core",
+      "App\\Controller\\": "src/Controllers",
+      "App\\Controller\\Account\\": "src/Controllers/Account",
+      "App\\Controller\\Checkout\\": "src/Controllers/Checkout",
+      "App\\Controller\\Helper\\": "src/Controllers/Helpers",
+      "App\\Controller\\Merchandise\\": "src/Controllers/Merchandise",
+      "App\\Model\\": "src/Models",
+      "App\\Model\\Authentication\\": "src/Models/Authentication",
+      "App\\Model\\Merchandise\\": "src/Models/Merchandise"
+    }
+  },
+  "require": {
+    "philo/laravel-blade": "^3.1",
+    "phpmailer/phpmailer": "^6.1",
+    "vlucas/phpdotenv": "^5.2",
+    "league/omnipay": "^3.0",
+    "omnipay/paypal": "^3.0",
+    "mpdf/mpdf": "^8.0"
+  }
+}

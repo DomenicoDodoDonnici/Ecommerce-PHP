@@ -1,0 +1,138 @@
+// navbar
+#menu {
+    padding-top: 2rem;
+    position: relative;
+    transition: all 0.1s ease;
+    background-color: $white;
+
+    //responsive buttons
+    .menu__responsive {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    //navbar links and logo
+    .menu__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand {
+            &::before {
+                display: none;
+            }
+
+            a img {
+                max-height: 6rem;
+                transition: all 0.3s ease;
+            }
+        }
+
+        .links {
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+
+                &:not(:first-child) {
+                    margin-left: 3rem;
+                }
+            }
+
+            form.link-form {
+                margin-left: 3rem;
+            }
+        }
+    }
+
+    // popup content
+    .menu__popup {
+        background: $white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 110%;
+        right: 50%;
+        z-index: -5;
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(50%, 0);
+        box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.25);
+
+        &.active {
+            z-index: 999;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        button#close-popup {
+            font-size: 3.2rem;
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            color: #000;
+            padding: 0 1rem;
+            border-radius: 5px;
+            background: $white;
+        }
+
+        .popup__content {
+            padding: 4rem 6rem 9rem 6rem;
+            max-height: 80vh;
+            overflow: auto;
+
+            &:not(.active) {
+                display: none;
+            }
+
+            h3 {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            // login form structure
+            .popup_login {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                & > * {
+                    width: 50%;
+                }
+
+                .greeting {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-right: 3rem;
+
+                    img {
+                        max-width: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+    // sticky
+    &.sticky {
+        background-color: $white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 997;
+        box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.25);
+
+        .menu__links .brand a img {
+            max-height: 4rem;
+        }
+    }
+}

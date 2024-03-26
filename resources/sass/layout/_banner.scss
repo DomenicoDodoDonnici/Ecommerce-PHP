@@ -1,0 +1,31 @@
+.banner {
+    display: flex;
+    height: 25rem;
+    width: 100%;
+
+    .right {
+        width: 25rem;
+        background: $peach;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            flex: 1;
+            text-align: center;
+            color: $tulip;
+
+            i {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    .left {
+        flex: 1;
+        background-image: url("./../../img/basics.jpg");
+        background-size: cover;
+        background-position: center 50%;
+        background-repeat: no-repeat;
+    }
+}
