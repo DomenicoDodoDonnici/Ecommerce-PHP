@@ -1,3 +1,5 @@
+/!\ La cartella dentro XAMPP se non si desidera modificare il progetto dovrà chiamarsi 'shoppingcart' come configurato di default nel codice
+
 # 🛒 Sito E-commerce realizzato con PHP puro e JavaScript vanilla
 
 Questo progetto è un sito e-commerce costruito senza l'utilizzo di framework. Il mio obiettivo era imparare a programmare un'applicazione funzionale per comprendere i fondamenti della programmazione orientata agli oggetti (OOP) e dell'architettura MVC, configurando al contempo un ambiente di sviluppo relativamente moderno.
