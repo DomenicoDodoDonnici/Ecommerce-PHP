@@ -14,9 +14,9 @@
                             />
                         </td>
                         <td style="width: 60%;font-size: 14pt;">
-                            5230 Newell Road <br />
-                            Palo Alto <br />
-                            CA 94020 <br />
+                            Via Venezia 62 <br />
+                            Parma <br />
+                            PR 43122 <br />
                             @aboutthefit
                         </td>
                         <td style="width: 20%; text-align: right;">

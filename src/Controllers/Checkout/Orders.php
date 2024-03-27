@@ -158,7 +158,7 @@ class Orders {
             $invoice
         );
 
-        $pdf->print("orderno_{$params['id']}.pdf");
+        $pdf->print("ordine_{$params['id']}.pdf");
     }
 
     /**
@@ -188,6 +188,6 @@ class Orders {
         $text = "Hi {$user->name}. Your order no. {$params['id']} has been processed successfully. The details have been attached.";
         $html = "Hi {$user->name}. Your order no. <b>{$params['id']}</b> has been processed successfully. The details have been attached.";
 
-        $pdf->email($to, $subject, $text, $html, "orderno_{$params['id']}.pdf");
+        $pdf->email($to, $subject, $text, $html, "ordine_{$params['id']}.pdf");
     }
 }

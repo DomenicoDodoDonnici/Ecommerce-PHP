@@ -24,13 +24,13 @@ class Mail {
         try {
             $mail->SMTPDebug = 0;
             $mail->isSMTP();                    //Set PHPMailer to use SMTP.
-            $mail->Host = "smtp.gmail.com";     //Set SMTP host name
+            $mail->Host = "sandbox.smtp.mailtrap.io";     //Set SMTP host name
             $mail->SMTPAuth = true;             //Because SMTP host requires authentication to send email
             //Provide username and password
             $mail->Username = $brand_email;
             $mail->Password = $brand_email_pass;
             $mail->SMTPSecure = "tls";          //If SMTP requires TLS encryption then set it
-            $mail->Port = 587;                  //Set TCP port to connect to
+            $mail->Port = 2525;                  //Set TCP port to connect to
             $mail->From = $brand_email;
             $mail->FromName = 'About The Fit';
 
