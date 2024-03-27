@@ -1,4 +1,4 @@
-/!\ La cartella dentro XAMPP se non si desidera modificare il progetto dovrà chiamarsi 'shoppingcart' come configurato di default nel codice
+/!\ La cartella dentro XAMPP htdocs se non si desidera modificare il progetto dovrà chiamarsi 'shoppingcart', come configurato di default nel codice
 
 # 🛒 Sito E-commerce realizzato con PHP puro e JavaScript vanilla
 
